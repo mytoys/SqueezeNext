@@ -20,3 +20,9 @@ to show the general trend but please contact us if you got new results.
 
 # Cifar-10/100, Tiny ImageNet
 - For results on these datasets, please see [luuuyi](https://github.com/luuuyi/SqueezeNext.PyTorch)'s repository
+
+
+# 系数含义
+1.0/2.0：其差别为除去第一个大卷积核个数外，其余的所有的卷积核个数2要比1多一倍。
+23/23v5：其差别为23中第一个大卷积核尺寸为7*7，而23v5中第一个大卷积核尺寸为5*5。
+G/no_G：G表示当前网络的block中，第一个1*1卷积，3*1卷积和1*3卷积都用到了group=2的操作。
